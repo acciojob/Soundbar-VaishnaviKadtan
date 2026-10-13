@@ -1,1 +1,59 @@
 /*  your css code here. If applicable */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #a55eea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+    width: 100%;
+    padding: 30px;
+}
+
+.btn {
+    background-color: rebeccapurple;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 30px 40px;
+    font-size: 24px;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn:active {
+    transform: scale(0.96);
+}
+
+.stop {
+    background-color: rebeccapurple;
+}
+
+@media (max-width: 900px) {
+    #buttons {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .btn {
+        padding: 20px 25px;
+        font-size: 20px;
+    }
+}
